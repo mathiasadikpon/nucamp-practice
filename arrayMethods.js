@@ -46,8 +46,18 @@ const things = [
   },
 ];
 
-myFavoriteThings = things.filter(thing => thing.favorite);
-console.log(myFavoriteThings);
+// myFavoriteThings = things.filter(thing => thing.favorite);
+// console.log(myFavoriteThings);
 
-const thingsWithOverFiftyPoints = things.filter(thing => thing.points > 50);
-console.log(thingsWithOverFiftyPoints);
+// const thingsWithOverFiftyPoints = things.filter(thing => thing.points > 50);
+// console.log(thingsWithOverFiftyPoints);
+
+//Array.find() review
+// const selectThingById = (id) => things.find(thing => thing.id === id);
+// console.log(selectThingById(4));
+
+// first thing with featured property set to true
+const firstFeaturedThing = things.find(t => t.featured);
+console.log(firstFeaturedThing);
+const firstFeaturedThingWithFilter = things.filter(t => t.featured)[0];
+console.log(firstFeaturedThingWithFilter);
