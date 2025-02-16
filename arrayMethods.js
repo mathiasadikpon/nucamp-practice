@@ -46,5 +46,8 @@ const things = [
   },
 ];
 
-myFavoriteThings = things.filter(thing => thing.favarite);
+myFavoriteThings = things.filter(thing => thing.favorite);
 console.log(myFavoriteThings);
+
+const thingsWithOverFiftyPoints = things.filter(thing => thing.points > 50);
+console.log(thingsWithOverFiftyPoints);
